@@ -63,27 +63,5 @@ public class Task4 {
             default:
                 System.out.println("Результат деления равен дробному числу " + result1);
         }
-        double result2 = 15.0 / number2;
-        switch ((int) result2) {
-            case 3:
-                System.out.println("Результат деления равен 3");
-                break;
-            case 5:
-                System.out.println("Результат деления равен 5");
-                break;
-            default:
-                System.out.println("Результат деления равен дробному числу " + result2);
-        }
-        double result3 = 15.0 / number3;
-        switch ((int) result3) {
-            case 3:
-                System.out.println("Результат деления равен 3");
-                break;
-            case 5:
-                System.out.println("Результат деления равен 5");
-                break;
-            default:
-                System.out.println("Результат деления равен дробному числу " + result3);
-        }
     }
 }
