@@ -40,7 +40,7 @@ public class Student {
         this.group = newGroup;
     }
 
-    public static Student[] getStudents(Student[] students, int mark) {
+    public Student[] getStudents(Student[] students, int mark) {
         int count = 0;
         for (Student student : students) {
             if (student.averageRating > mark) {

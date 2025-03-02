@@ -19,7 +19,8 @@ public class Main {
         students[3] = new Student(4, "Николай", "Потемкин", "Клинер", 2, "104", 43);
         students[4] = new Student(5, "Сан", "Саныч", "Юрист", 3, "105", 80);
 
-        Student[] highRatingStudents = Student.getStudents(students, 80);
+        Student studentHelper = new Student();
+        Student[] highRatingStudents = studentHelper.getStudents(students, 80);
 
         System.out.println("Студенты с оценкой выше 80 : ");
         for (Student student : highRatingStudents) {
