@@ -12,10 +12,6 @@ public class Dog extends Animal {
         this.averageWeight = averageWeight;
     }
 
-    public void bark() {
-        System.out.println(name + " лает");
-    }
-
     public void bite() {
         System.out.println(name + " кусает");
     }

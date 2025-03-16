@@ -12,10 +12,6 @@ public class Lion extends Animal {
         this.averageWeight = averageWeight;
     }
 
-    public void roar() {
-        System.out.println(name + " рычит");
-    }
-
     public void makeSound() {
         System.out.println(name + " рычит");
     }

@@ -30,17 +30,16 @@ public class Main {
         for (Animal animal : zoo.getAnimals()) {
             if (animal instanceof Dog) {
                 Dog dog = (Dog) animal;
-                dog.bark();
+                dog.makeSound();
                 dog.play();
                 dog.bite();
                 dog.jump();
                 dog.run();
             } else if (animal instanceof Bird) {
                 Bird bird = (Bird) animal;
-                bird.sing();
+                bird.makeSound();
                 bird.play();
                 bird.incubate();
-                bird.sing();
                 bird.peck();
 
             }
@@ -60,7 +59,7 @@ public class Main {
         for (Animal animal : zoo.getAnimals()) {
             if (animal instanceof Lion) {
                 Lion lion = (Lion) animal;
-                lion.roar();
+                lion.makeSound();
                 lion.play();
             }
         }

@@ -10,9 +10,6 @@ public class Bird extends Animal {
         this.maxFlightHeight = maxFlightHeight;
     }
 
-    public void sing() {
-        System.out.println(family + " поет");
-    }
 
     public void peck() {
         System.out.println(family + " клюет");
