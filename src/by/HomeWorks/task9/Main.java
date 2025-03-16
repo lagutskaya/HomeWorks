@@ -63,5 +63,18 @@ public class Main {
                 lion.play();
             }
         }
-    }
+        System.out.println("\nПроверка метода equals после переопределения :");
+        System.out.println("Сравнение двух собак:");
+        System.out.println("dog1 == dog2?\n" + dog1.equals(dog2));
+
+        System.out.println("\nСравнение двух птиц:");
+        System.out.println("bird1 == bird2?\n" + bird1.equals(bird2));
+
+        System.out.println("\nПроверка метода hashCode после переопределения");
+        System.out.println("\nХэш-коды:");
+        System.out.println("Хэш-код для dog1: " + dog1.hashCode());
+        System.out.println("Хэш-код для dog2: " + dog2.hashCode());
+        System.out.println("Хэш-код для bird1: " + bird1.hashCode());
+        System.out.println("Хэш-код для bird2: " + bird2.hashCode());    }
+
 }

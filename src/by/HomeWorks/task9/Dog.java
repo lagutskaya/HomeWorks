@@ -36,5 +36,30 @@ public class Dog extends Animal {
         return "Собака : \n имя " + name + " " + "порода " + breed + " " + "средний вес " + averageWeight + " " +
                 super.toString();
     }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj == null || getClass() != obj.getClass())) {
+            return false;
+        }
+        if (!super.equals(obj)) {
+            return false;
+        }
+        Dog dog = (Dog) obj;
+        return Double.compare(dog.averageWeight, averageWeight) == 0 && name.equals(dog.name) && breed.equals(dog.breed);
+    }
+
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + name.hashCode();
+        result = 31 * result + breed.hashCode();
+        long weightBits = Double.doubleToLongBits(averageWeight);
+        int weightHash = (int) (weightBits ^ (weightBits >>> 32));
+        result = 31 * result + weightHash;
+        return result;
+    }
+
 }
 
