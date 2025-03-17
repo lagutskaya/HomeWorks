@@ -55,7 +55,8 @@ public class Task8 {
 
         return modifiedText;
     }
-    public static void getPatternText(){
+
+    public static void getPatternText() {
         System.out.println("Задача 3");
         String text = "Да1та выпуска 8 декабря 1998 года[12]. Кодовое имя Playground. В данном случае встречается" +
                 " путаница. Выпускались книги, например,Beginning Java 2 by Ivor Horton (Mar 1999), фактически" +
@@ -69,7 +70,8 @@ public class Task8 {
         String cleanedText = cleanedText(text);
         System.out.println(cleanedText);
     }
-    public static String cleanedText(String text){
+
+    public static String cleanedText(String text) {
         return text.replaceAll("[^а-яА-ЯёЁa-zA-Z ]+", "");
     }
 }
