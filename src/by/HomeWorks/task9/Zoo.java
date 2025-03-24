@@ -11,7 +11,9 @@ public class Zoo {
 
     public void addAnimal(Animal animal) {
         Animal[] newAnimals = new Animal[count + 1];
-        System.arraycopy(animals, 0, newAnimals, 0, count);
+        for (int i = 0; i < count; i++) {
+            newAnimals[i] = animals[i];
+        }
         newAnimals[count] = animal;
         animals = newAnimals;
         count++;
