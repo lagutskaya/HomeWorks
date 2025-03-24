@@ -1,4 +1,4 @@
-package by.task4;
+package by.HomeWorks.task4;
 
 import java.util.Scanner;
 
