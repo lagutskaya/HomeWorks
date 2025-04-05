@@ -36,25 +36,25 @@ public class MainForEmployee {
 
         System.out.println("\nСотрудники, сгруппированные по профессии: \n");
         for (Map.Entry<String, Collection<Employee>> entry : groupedEmployees.entrySet()) {
-        System.out.println("Профессия: " + entry.getKey() + ", Сотрудники: " + entry.getValue());
+            System.out.println("Профессия: " + entry.getKey() + ", Сотрудники: " + entry.getValue());
+        }
     }
-}
 
-        private static Map<String, Collection<Employee>> groupEmployeesByProfession(Map<Employee, String> employees) {
+    private static Map<String, Collection<Employee>> groupEmployeesByProfession(Map<Employee, String> employees) {
         Map<String, Collection<Employee>> groupedMap = new HashMap<>();
 
         for (Map.Entry<Employee, String> entry : employees.entrySet()) {
-        Employee employee = entry.getKey();
-        String profession = entry.getValue();
+            Employee employee = entry.getKey();
+            String profession = entry.getValue();
 
-        if (!groupedMap.containsKey(profession)) {
-            groupedMap.put(profession, new ArrayList<>());
+            if (!groupedMap.containsKey(profession)) {
+                groupedMap.put(profession, new ArrayList<>());
+            }
+            groupedMap.get(profession).add(employee);
         }
-        groupedMap.get(profession).add(employee);
-    }
 
-    return groupedMap;
-}
+        return groupedMap;
+    }
 
     private static List<Employee> raiseSalaryForProfession(Map<Employee, String> employees, String profession, double amountOfIncrease) {
         List<Employee> updatedEmployees = new ArrayList<>();
@@ -67,4 +67,4 @@ public class MainForEmployee {
         }
         return updatedEmployees;
     }
-    }
+}

@@ -11,6 +11,7 @@ public class Department {
         this.departmentName = departmentName;
         this.rooms = new HashSet<>();
     }
+
     public void addRoom(Room room) {
         rooms.add(room);
     }
@@ -29,7 +30,7 @@ public class Department {
             }
         }
 
-        return new int[] { maleCount, femaleCount };
+        return new int[]{maleCount, femaleCount};
     }
 
     public String getDepartmentName() {
