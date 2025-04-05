@@ -3,8 +3,8 @@ package by.HomeWorks.task14;
 public class MainForPatients {
     public static void main(String[] args) {
         Patient ivan = new Patient(88, "Аппендицит", Gender.MALE, "123qwe", "Иван", "Иванов");
-        Patient irina = new Patient(22, "Гастрит", Gender.FEMALE, "1918fg", "Ирина","Козлова");
-        Patient alena = new Patient(31, "Гастрит", Gender.FEMALE, "2332tr", "Алена","Дрозд");
+        Patient irina = new Patient(22, "Гастрит", Gender.FEMALE, "1918fg", "Ирина", "Козлова");
+        Patient alena = new Patient(31, "Гастрит", Gender.FEMALE, "2332tr", "Алена", "Дрозд");
         Patient ivanov = new Patient(88, "Аппендицит", Gender.MALE, "123qwe", "Иван", "Иванов");
         Patient nikita = new Patient(24, "Мигрень", Gender.MALE, "456df", "Никита", "Китов");
 
@@ -47,5 +47,5 @@ public class MainForPatients {
         room101.printPatientInfo();
         room102.printPatientInfo();
     }
-    }
+}
 
