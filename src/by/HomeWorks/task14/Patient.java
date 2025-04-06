@@ -2,7 +2,7 @@ package by.HomeWorks.task14;
 
 import java.util.Objects;
 
-public class Patient implements Comparable<Patient>{
+public class Patient implements Comparable<Patient> {
     private String id;
     private String name;
     private String surname;
